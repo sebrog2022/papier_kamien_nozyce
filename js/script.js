@@ -16,7 +16,6 @@ scrissors.addEventListener("click", function(){
 const randomMove = createRandomMove();
 displayMoves(this.id, randomMove);
 displayResult(this.id, randomMove);
-
 })
 
 paper.addEventListener("click", function(){

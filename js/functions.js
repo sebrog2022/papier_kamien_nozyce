@@ -23,15 +23,21 @@ function displayMoves(playersMove, computersMove) {
 }
 
 function displayResult(playersMove, computersMove) {
-    const resultDiv = document.querySelector("result");
+    const resultDiv = document.querySelector("#result");
 
     if(playersMove === computersMove) resultDiv.innerHTML = 'draw';
 
-    else if (playersMove === "paper" && computersMove ==="scrissors") resultDiv.innerHTML = 'you lost';
+    else if (playersMove === "paper"
+            && computersMove ==="scrissors")
+            resultDiv.innerHTML = 'you lost';
 
-    else if (playersMove === "rock" && computersMove ==="paper") resultDiv.innerHTML = 'you lost';
+    else if (playersMove === "rock"
+             && computersMove ==="paper")
+             resultDiv.innerHTML = 'you lost';
 
-    else if (playersMove === "scrissors" && computersMove ==="rock") resultDiv.innerHTML = 'you lost';
+    else if (playersMove === "scrissors"
+            && computersMove ==="rock")
+            resultDiv.innerHTML = 'you lost';
 
-    else resultDiv.innerHTML = "you won";
+    else resultDiv.innerHTML = 'you won';
 }
