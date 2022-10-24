@@ -1,4 +1,34 @@
 .results {
     margin: 20px 0;
-    color: blue;
+    color: goldenrod;
 }
+
+body {
+    border: solid 2px;
+    position: relative;
+
+}
+h1 {
+    font-size: 36px;
+    color:blueviolet;
+    text-align: center;
+
+
+
+}
+
+h3 {
+    color:blue;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+.moves button {
+    color: blueviolet;
+    margin-left: 200px;
+
+}
+
+
+

@@ -25,19 +25,31 @@ function displayMoves(playersMove, computersMove) {
 function displayResult(playersMove, computersMove) {
     const resultDiv = document.querySelector("#result");
 
-    if(playersMove === computersMove) resultDiv.innerHTML = 'draw';
+    if(playersMove === computersMove) {
+        resultDiv.style.color = "blue";
+        resultDiv.innerHTML = 'draw';
+    }
 
     else if (playersMove === "paper"
-            && computersMove ==="scrissors")
+            && computersMove ==="scrissors") {
+            resultDiv.style.color = "red";
             resultDiv.innerHTML = 'you lost';
+            }
 
     else if (playersMove === "rock"
-             && computersMove ==="paper")
+             && computersMove ==="paper"){
+             resultDiv.style.color = "red";
              resultDiv.innerHTML = 'you lost';
+             }
 
     else if (playersMove === "scrissors"
-            && computersMove ==="rock")
+            && computersMove ==="rock") {
+            resultDiv.style.color = "red";
             resultDiv.innerHTML = 'you lost';
+            }
 
-    else resultDiv.innerHTML = 'you won';
+    else  {
+        resultDiv.style.color = "green"
+        resultDiv.innerHTML = 'you won';
+    }
 }
